@@ -180,8 +180,8 @@ Directly computing Euclidean distance ($\sqrt{\Delta x^2 + \Delta y^2}$) or Shoe
 
 1. **Clone the repository**:
    ```bash
-   git clone <YOUR_GITHUB_REPO_URL>
-   cd assign
+   git clone https://github.com/gpranit16/geospatial-measurement-api.git
+   cd geospatial-measurement-api
    ```
 
 2. **Create and activate a virtual environment**:
