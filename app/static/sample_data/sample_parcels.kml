@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Sample Geospatial Survey Survey</name>
+    <description>Parcels, Transmission Lines, and Survey Waypoints</description>
+    
+    <!-- Polygon 1: Solar Park Parcel -->
+    <Placemark>
+      <name>Solar Park Boundary A</name>
+      <description>Phase 1 Solar Array Parcel</description>
+      <ExtendedData>
+        <Data name="land_use"><value>Renewable Energy</value></Data>
+        <Data name="surveyor"><value>Antigravity Geo</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.100,28.600,0
+              77.105,28.600,0
+              77.105,28.605,0
+              77.100,28.605,0
+              77.100,28.600,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- Polygon 2: Agricultural Field -->
+    <Placemark>
+      <name>Agricultural Field B</name>
+      <description>Paddy Field Zone</description>
+      <ExtendedData>
+        <Data name="crop"><value>Wheat</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.110,28.610,0
+              77.118,28.610,0
+              77.115,28.618,0
+              77.110,28.615,0
+              77.110,28.610,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- LineString 1: Transmission Line -->
+    <Placemark>
+      <name>High Voltage Line 400kV</name>
+      <description>Main Transmission Corridor</description>
+      <ExtendedData>
+        <Data name="voltage_kv"><value>400</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.100,28.600,0
+          77.108,28.607,0
+          77.115,28.612,0
+          77.125,28.620,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- LineString 2: Access Road -->
+    <Placemark>
+      <name>Site Access Road</name>
+      <description>Asphalt 2-lane road</description>
+      <LineString>
+        <coordinates>
+          77.095,28.595,0
+          77.100,28.600,0
+          77.110,28.602,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Point 1: Geodetic Benchmark -->
+    <Placemark>
+      <name>Geodetic Control Point 01</name>
+      <description>GPS Reference Benchmark</description>
+      <Point>
+        <coordinates>77.100,28.600,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Point 2: Substation Center -->
+    <Placemark>
+      <name>Substation Landmark</name>
+      <Point>
+        <coordinates>77.105,28.605,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>

@@ -1,0 +1,14 @@
+services:
+  geomeasure-api:
+    build: .
+    container_name: geomeasure-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./geomeasure.db:/app/geomeasure.db
+    environment:
+      - PROJECT_NAME=Geospatial File Measurement API
+      - DATABASE_URL=sqlite:////app/geomeasure.db
+      - MAX_FILE_SIZE_MB=50
+    restart: unless-stopped
